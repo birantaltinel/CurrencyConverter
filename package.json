@@ -1,0 +1,25 @@
+{
+  "name": "currencyconverter",
+  "version": "1.0.0",
+  "description": "Converts amounts between currencies according to the exchange rate at the specified date",
+  "main": "index.ts",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/birantaltinel/CurrencyConverter.git"
+  },
+  "keywords": [
+    "currency",
+    "conversion",
+    "exchange",
+    "rate"
+  ],
+  "author": "Birant Altinel",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/birantaltinel/CurrencyConverter/issues"
+  },
+  "homepage": "https://github.com/birantaltinel/CurrencyConverter#readme"
+}
