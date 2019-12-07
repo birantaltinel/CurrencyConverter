@@ -1,9 +1,12 @@
 import * as http from 'http';
+import { downloadAndSaveExchangeRatesFrom } from './services/exchangeRatesManager';
 import { app } from './app';
+import { exchangeRatesUrl } from './resources/constants';
 
-const port = process.env.PORT || 3100; //maybe choose a more suitable port later
+const port = process.env.PORT || 3100;
 const server = http.createServer(app);
 
-server.listen(port, () => {
-    console.log("Server restarted successfully")
+server.listen(port, async () => {
+    await downloadAndSaveExchangeRatesFrom(exchangeRatesUrl);
+    console.log("Server restarted successfully");
 });
