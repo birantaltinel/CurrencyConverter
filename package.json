@@ -4,9 +4,8 @@
   "description": "Converts amounts between currencies according to the exchange rate at the specified date",
   "scripts": {
     "start": "node -r ts-node/register server.ts",
-    "develop": "nodemon -r ts-node/register server.ts",
-    "debug": "node -r ts-node/register --inspect server.ts",
-    "test": "mocha -r ts-node/register ./tests/*.spec.ts"
+    "debug": "nodemon --inspect=0.0.0.0:9229 -r ts-node/register --exec node server.ts",
+    "test": "mocha -r ts-node/register ./tests/*.spec.ts --exit"
   },
   "repository": {
     "type": "git",
@@ -37,6 +36,7 @@
     "sinon-chai": "^3.3.0",
     "supertest": "^4.0.2",
     "ts-node": "^8.5.4",
+    "tslint": "^5.20.1",
     "typescript": "^3.7.3",
     "util": "^0.12.1",
     "xml-parser": "^1.2.1"
