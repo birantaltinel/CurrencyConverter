@@ -27,10 +27,10 @@ The response of the server is a JSON object in the following structure:
 
 ## Structure of the code
 
-* `resources` : Downloaded exchange rates and some constants are stored within this folder.
-* `routers` : The entry point for the http requests. The requests are validated within the handler functions, and the response objects are built according to the results from the domain functions.
-* `services` : The service functions that contain the business logic and perform the main required functionalities.
-* `tests` : Unit test modules for the routers and services. Use `npm run test` in order to execute the automated script for running all the unit tests.
+* `/resources` : Downloaded exchange rates and some constants are stored within this folder.
+* `/routers` : The entry point for the http requests. The requests are validated within the handler functions, and the response objects are built according to the results from the domain functions.
+* `/services` : The service functions that contain the business logic and perform the main required functionalities.
+* `/tests` : Unit test modules for the routers and services. Use `npm run test` in order to execute the automated script for running all the unit tests.
 * `server.ts` : The main starting point of the application that starts up the server and exposes it via the specified port.
 * `app.ts` : The express service that connects request paths to the routers.
 * `utils.ts` : Utility functions that are designed to be available throughout the application.
@@ -58,4 +58,5 @@ The response of the server is a JSON object in the following structure:
 `docker build -t currency-converter .`
 
 `docker run -p 3100:3100 currency-converter`
+
 6. The application server should start up within a Docker container and should be available through the port `3100`.
